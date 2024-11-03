@@ -130,7 +130,7 @@ svg{
 #ex1{
     width: 100%;
     height: 100%vh;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 #expTxt{
     display: flex;
@@ -145,8 +145,9 @@ svg{
 }
 #expTxt2{
     color: white;
-    font-size: 35px;
-    text-align: left;
+    font-size: 30px;
+    text-align: justify;
+    padding-top: 5vh;
 }
 #dsp{
     display: grid;
@@ -157,25 +158,106 @@ svg{
    justify-content: center;
    margin-left: 35vh;
 }
+#conhecimento{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+#cnh1{
+    display: flex;
+    font-size: 35px;
+    margin-left: 40px;
+}
+.cnh2{
+    color: white;
+}
+.cnh3{
+    color: #621652;
+}
+#lgs{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 30vh;
+}
+#lgs svg{
+    margin: 0 40px;
+}
+#html1 svg{
+    width: 90px;    
+    height: 90px;
+}
+#css1 svg{
+    width: 90px;    
+    height: 90px;
+}
+#java svg{
+    width: 90px;    
+    height: 90px;
+}
+#c1 svg{
+    width: 90px;    
+    height: 90px;
+}
+#fim{
+    width: 100%;
+    height: 80px;
+    background-color: #621652;
+    margin-top: 8vh;
+}
+#email{
+    display: flex;
+    margin: 50px;
+    padding-top: 25px;
+    align-items: center;
+}
+#em1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#em1 svg{
+    width: 15px;
+    height: 15px;
+    fill: white;
+}
+#em1 p{
+    color: white;
+    font-size: 15px;
+}
+#svgs2{
+    fill: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    gap: 40px;
+}
+svgs2 svg{
+    width: 5px;
+    height: 5px;
+}
+#btn2{
+    color: white;
+    font-size: 16px;
+    background-color: rgba(25, 25, 76, 1);
+    border: rgba(25, 25, 76, 1);
+    border-radius: 25px;
+    padding: 6px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    margin-left: 180px;
+}
+#btn2:hover{
+    background-color: white;
+    color: rgba(98, 24, 82, 1);
+    border: #621652;
+}
+.lk{
+    width: 15px;
+    height: 15px;
+    fill: white;
+}
 .janela-modal{
     width: 100vw;
     height: 100vh;
@@ -214,4 +296,66 @@ svg{
 }
 .janela-modal.abrir{
     display: flex;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+form{
+    background-color: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+form h1{
+    text-align: center;
+    font-size: 20px;
+    color: #621652;
+}
+form p{
+    text-align: center;
+    margin: 20px 0;
+}
+.input-single{
+    position: relative;
+    margin: 20px 0;
+}
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.2s;
+    cursor: text;
+}
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #621652;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #621652;
+}
+.btn3{
+    width: 100%;
+    text-align: center;
+}
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #621652;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form input[type=submit]:hover{
+    background-color: black;
 }
