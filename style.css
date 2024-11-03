@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(25, 25, 76, 1);
+    font-family: "Roboto", sans-serif;  
+}
+html{
+    scroll-behavior: smooth;
+}
+#inicio{
+    position: fixed;
+}
+#i1{
+    display: flex;
+    padding-top: 10px;
+}
+#i2{
+    color: white;
+    font-size: 30px;
+    padding-left: 2vh;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 900;
+}
+#i3 ul {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 155vh;
+}
+#i3 ul li{
+    display: inline-block;
+}
+#i3 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding-left: 35px;
+    border-radius: 30px;
+    transition: 0.8s;
+    padding: 5px 15px;
+}
+#i3 ul li a:hover{
+    background-color: rgba(71, 52, 78, 1);
+}
+#qdv1{
+    height: 100vh;
+}
+#qvd2{
+    background-color: rgba(0, 186, 180, 1);
+    position: absolute;
+    height: 400px;  
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+}
+#eu1{
+    width: 50%;
+    height: 50%;
+    background-image: url(eu.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+#txt{
+    font-size: 20px;
+    display: grid;
+    gap: 20px;
+    justify-items: left;
+    color: white;
+}
+#qs{
+    color: rgba(98, 24, 82, 1);
+}
+#lf1{
+    font-size: 25px;
+}
+#contato1{
+    display: flex;
+    flex-direction: row;
+}
+svg{
+    width: 40px;
+    height: 40px;
+}
+#svgs{
+    display: flex;
+}
+#linkedin{
+    width: 40px;
+    height: 40px;
+}
+#git{
+    padding-left: 50px;
+}
+#btn{
+    color: white;
+    font-size: 16px;
+    background-color: rgba(98, 24, 82, 1);
+    border: rgba(98, 24, 82, 1);
+    border-radius: 25px;
+    padding: 6px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 45px;
+    display: inline-flex;
+    align-items: center;
+}
+#btn:hover{
+    background-color: white;
+    color: rgba(98, 24, 82, 1);
+}
+#btn svg{
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    fill: white;
+}
+#btn:hover svg{
+    fill: #621652;
+}
+#ex1{
+    width: 100%;
+    height: 100%vh;
+    margin-left: 50px;
+}
+#expTxt{
+    display: flex;
+}
+.t1{
+    color: white;
+    font-size: 35px;
+}
+.t2{
+    color: #621652;
+    font-size: 35px;
+}
+#expTxt2{
+    color: white;
+    font-size: 35px;
+    text-align: left;
+}
+#dsp{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 30px;
+}
+#img1{
+   justify-content: center;
+   margin-left: 35vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: rgb(205, 192, 192);
+    backdrop-filter: blur(10%);
+    padding: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+.fechar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;   
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+}
+.janela-modal.abrir{
+    display: flex;
+}
